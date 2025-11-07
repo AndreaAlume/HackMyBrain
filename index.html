@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScienzaViva - Divulgazione Scientifica</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <!-- Navbar con effetto blur -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon"></div>
+                <span class="logo-text">ScienzaViva</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#articoli">Articoli</a></li>
+                <li><a href="#categorie">Categorie</a></li>
+                <li><a href="#about">Chi Siamo</a></li>
+                <li><a href="#contatti">Contatti</a></li>
+            </ul>
+            <button class="subscribe-btn">Iscriviti</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="hero-tag">Esplora il Mondo della Scienza</span>
+            <h1>Trasforma la Curiosità in <span class="highlight">Conoscenza</span></h1>
+            <p class="hero-subtitle">Scopri articoli approfonditi su fisica, biologia, tecnologia e innovazione scientifica con analisi rigorose e contenuti di qualità</p>
+            <div class="hero-buttons">
+                <button class="btn-primary">Inizia a Leggere</button>
+                <button class="btn-secondary">Scopri di Più</button>
+            </div>
+        </div>
+
+        <!-- Dashboard Preview -->
+        <div class="dashboard-preview">
+            <div class="dashboard-header">
+                <div>
+                    <h3>Dashboard Lettore</h3>
+                    <p class="dashboard-subtitle">Monitora i tuoi progressi</p>
+                </div>
+                <div class="time-filters">
+                    <span class="filter active">Mese</span>
+                    <span class="filter">Anno</span>
+                    <span class="filter">Totale</span>
+                </div>
+            </div>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <span class="stat-label">Articoli Letti</span>
+                        <span class="stat-change positive">+18%</span>
+                    </div>
+                    <p class="stat-number">42</p>
+                    <div class="stat-bar">
+                        <div class="stat-bar-fill" style="width: 75%"></div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <span class="stat-label">Tempo Lettura</span>
+                        <span class="stat-change positive">+24%</span>
+                    </div>
+                    <p class="stat-number">8.5<span class="stat-unit">h</span></p>
+                    <div class="stat-bar">
+                        <div class="stat-bar-fill" style="width: 60%"></div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <span class="stat-label">Argomenti</span>
+                        <span class="stat-change neutral">+3</span>
+                    </div>
+                    <p class="stat-number">12</p>
+                    <div class="stat-bar">
+                        <div class="stat-bar-fill" style="width: 85%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chart-section">
+                <div class="chart-container">
+                    <div class="chart-title">Distribuzione Letture</div>
+                    <div class="donut-chart">
+                        <svg viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="35" fill="none" stroke="#0f0f0f" stroke-width="12"/>
+                            <circle cx="50" cy="50" r="35" fill="none" stroke="#ff4500" stroke-width="12" 
+                                    stroke-dasharray="140 220" transform="rotate(-90 50 50)"/>
+                            <circle cx="50" cy="50" r="35" fill="none" stroke="#ff6b2b" stroke-width="12" 
+                                    stroke-dasharray="70 220" stroke-dashoffset="-140" transform="rotate(-90 50 50)"/>
+                        </svg>
+                        <div class="chart-center">
+                            <span class="chart-percentage">64%</span>
+                        </div>
+                    </div>
+                    <div class="chart-legend">
+                        <div class="legend-item">
+                            <span class="legend-dot" style="background: #ff4500"></span>
+                            <span>Fisica Quantistica</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-dot" style="background: #ff6b2b"></span>
+                            <span>Biologia Molecolare</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <div class="chart-title">Attività Settimanale</div>
+                    <div class="bar-chart">
+                        <div class="bar-wrapper">
+                            <div class="bar" style="height: 45%"></div>
+                            <span class="bar-label">L</span>
+                        </div>
+                        <div class="bar-wrapper">
+                            <div class="bar" style="height: 65%"></div>
+                            <span class="bar-label">M</span>
+                        </div>
+                        <div class="bar-wrapper">
+                            <div class="bar" style="height: 50%"></div>
+                            <span class="bar-label">M</span>
+                        </div>
+                        <div class="bar-wrapper">
+                            <div class="bar" style="height: 80%"></div>
+                            <span class="bar-label">G</span>
+                        </div>
+                        <div class="bar-wrapper">
+                            <div class="bar active" style="height: 100%"></div>
+                            <span class="bar-label">V</span>
+                        </div>
+                        <div class="bar-wrapper">
+                            <div class="bar" style="height: 55%"></div>
+                            <span class="bar-label">S</span>
+                        </div>
+                        <div class="bar-wrapper">
+                            <div class="bar" style="height: 35%"></div>
+                            <span class="bar-label">D</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners">
+        <p class="partners-title">In collaborazione con istituti di ricerca leader</p>
+        <div class="partners-logos">
+            <span>CERN</span>
+            <span>NASA</span>
+            <span>MIT</span>
+            <span>INFN</span>
+            <span>ESA</span>
+            <span>CNR</span>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="content-section">
+        <div class="content-header">
+            <span class="section-tag">Trasforma i Dati in Comprensione</span>
+            <h2>Come la divulgazione scientifica <span class="highlight">accelera</span> la comprensione</h2>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-number">01</div>
+                <h3>Analisi Approfondite</h3>
+                <p>Esploriamo i fenomeni scientifici con rigore e chiarezza, rendendo accessibili concetti complessi attraverso metodologie validate</p>
+                <button class="feature-btn">Scopri di più</button>
+            </div>
+
+            <div class="feature-card featured">
+                <div class="feature-badge">Popolare</div>
+                <div class="feature-number">02</div>
+                <h3>Ricerca all'Avanguardia</h3>
+                <p>Seguiamo le ultime scoperte e innovazioni dal mondo della ricerca internazionale con aggiornamenti costanti e verificati</p>
+                <button class="feature-btn">Esplora contenuti</button>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-number">03</div>
+                <h3>Impatto Globale</h3>
+                <p>Analizziamo come la scienza influenza la società e il nostro futuro collettivo con una prospettiva interdisciplinare</p>
+                <button class="feature-btn">Leggi analisi</button>
+            </div>
+        </div>
+
+        <!-- Mini Analytics Display -->
+        <div class="mini-analytics">
+            <div class="analytics-left">
+                <h4>Engagement Complessivo</h4>
+                <p class="analytics-number">24,850</p>
+                <div class="analytics-meta">
+                    <span class="analytics-trend">↑ 12.5%</span>
+                    <span class="analytics-period">vs mese precedente</span>
+                </div>
+            </div>
+            <div class="analytics-visual">
+                <div class="mini-chart-wrapper">
+                    <div class="donut-mini">
+                        <svg viewBox="0 0 80 80">
+                            <circle cx="40" cy="40" r="28" fill="none" stroke="#0f0f0f" stroke-width="10"/>
+                            <circle cx="40" cy="40" r="28" fill="none" stroke="#ff4500" stroke-width="10" 
+                                    stroke-dasharray="120 176" transform="rotate(-90 40 40)"/>
+                        </svg>
+                    </div>
+                    <span class="mini-chart-label">68%</span>
+                </div>
+                <div class="bars-mini">
+                    <div class="mini-bar" style="height: 50%"></div>
+                    <div class="mini-bar" style="height: 70%"></div>
+                    <div class="mini-bar" style="height: 45%"></div>
+                    <div class="mini-bar" style="height: 90%"></div>
+                    <div class="mini-bar active-bar" style="height: 100%"></div>
+                    <div class="mini-bar" style="height: 60%"></div>
+                    <div class="mini-bar" style="height: 75%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <div class="logo-icon"></div>
+                    <span class="logo-text">ScienzaViva</span>
+                </div>
+                <p>Divulgazione scientifica di qualità per menti curiose</p>
+                <div class="footer-social">
+                    <a href="#" class="social-link"></a>
+                    <a href="#" class="social-link"></a>
+                    <a href="#" class="social-link"></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Contenuti</h4>
+                    <a href="#">Articoli</a>
+                    <a href="#">Ricerche</a>
+                    <a href="#">Video</a>
+                    <a href="#">Podcast</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Comunità</h4>
+                    <a href="#">Forum</a>
+                    <a href="#">Newsletter</a>
+                    <a href="#">Eventi</a>
+                    <a href="#">Collabora</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Risorse</h4>
+                    <a href="#">Documentazione</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Contatti</a>
+                    <a href="#">Privacy</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 ScienzaViva. Tutti i diritti riservati.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Termini di Servizio</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
