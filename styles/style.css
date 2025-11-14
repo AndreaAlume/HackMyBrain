@@ -279,10 +279,10 @@ body {
 }
 
 .topic-card {
-    background: linear-gradient(135deg, rgba(15, 15, 15, 0.9) 0%, rgba(20, 20, 20, 0.9) 100%);
+    background: linear-gradient(135deg, rgb(0, 0, 0) 0%, rgb(12, 12, 12) 100%);
     backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 12px;
+    border: px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
     padding: 3rem;
     transition: all 0.4s;
     position: relative;
@@ -312,7 +312,7 @@ body {
 }
 
 .topic-card.featured {
-    background: linear-gradient(135deg, rgba(255, 69, 0, 0.05) 0%, rgba(20, 20, 20, 0.9) 100%);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.05) 0%, rgba(20, 20, 20, 0.9) 100%);
     border-color: rgba(255, 69, 0, 0.2);
 }
 
