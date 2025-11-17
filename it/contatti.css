@@ -1,0 +1,151 @@
+/* Hero Contatti */
+.hero-about {
+    padding: 180px 3rem 80px;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(82, 82, 82, 0.247) 0%, rgba(5, 5, 5, 0) 100%);
+}
+
+.hero-about-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero-about h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: -2px;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.hero-about-lead {
+    font-size: 1.4rem;
+    color: #b0b0b0;
+    line-height: 1.7;
+    max-width: 700px;
+    margin: 0 auto;
+    animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+/* Sezione Contatti */
+.about-section {
+    padding: 100px 3rem;
+}
+
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.section-subtitle {
+    font-size: 1rem;
+    color: #ff6b2b;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 0.5rem;
+}
+
+.text-content {
+    margin-top: 4rem;
+}
+
+.text-block {
+    margin-bottom: 4rem;
+}
+
+.text-block h3 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.text-block h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #ff4500, transparent);
+}
+
+.text-block p {
+    color: #b0b0b0;
+    line-height: 1.9;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.text-block strong {
+    color: #e8e8e8;
+    font-weight: 700;
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 100px 3rem;
+    text-align: center;
+}
+
+.cta-container h2 {
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.cta-container p {
+    font-size: 1.2rem;
+    color: #9a9a9a;
+    margin-bottom: 3rem;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-about {
+        padding: 140px 1.5rem 60px;
+    }
+
+    .hero-about h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-about-lead {
+        font-size: 1.1rem;
+    }
+
+    .about-section,
+    .cta-section {
+        padding: 60px 1.5rem;
+    }
+
+    .text-block h3 {
+        font-size: 1.6rem;
+    }
+
+    .text-block p {
+        font-size: 1rem;
+    }
+
+    .cta-container h2 {
+        font-size: 2rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+}
