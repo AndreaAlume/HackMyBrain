@@ -1,0 +1,5 @@
+# TODO: implement authentication
+
+- Added login endpoint
+- Added basic password validation
+- Updated README with authentication instructions
