@@ -193,7 +193,7 @@
 .category-image {
     width: 100%;
     height: 350px;
-    border-radius: 16px;
+    border-radius: 10px;
     overflow: hidden;
     margin-bottom: 1.5rem;
     position: relative;
