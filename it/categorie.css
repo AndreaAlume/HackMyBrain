@@ -80,7 +80,6 @@
     background: rgba(5, 5, 5, 0.85);
     backdrop-filter: blur(40px) saturate(180%);
     -webkit-backdrop-filter: blur(40px) saturate(180%);
-    border: 1px solid rgba(255, 69, 0, 0.15);
     border-radius: 8px;
     max-height: 480px;
     overflow-y: auto;
@@ -129,7 +128,7 @@
 }
 
 .search-result-item:hover {
-    background: rgba(255, 69, 0, 0.08);
+    background: rgba(61, 61, 61, 0.292);
 }
 
 .search-result-category {
