@@ -1,0 +1,124 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "Il Paradosso del Gatto di Schrödinger",
+      "description": "Un'analisi approfondita del famoso esperimento mentale che ha rivoluzionato la nostra comprensione della realtà quantistica",
+      "category": "Fisica Quantistica",
+      "url": "./articolo/schrodinger.html",
+      "tags": ["quantistica", "paradosso", "meccanica quantistica", "gatto"]
+    },
+    {
+      "id": 2,
+      "title": "Come il Cervello Crea la Realtà",
+      "description": "Scopri come il tuo cervello costruisce attivamente la realtà che percepisci",
+      "category": "Neuroscienze",
+      "url": "./articolo/cervello-realta.html",
+      "tags": ["neuroscienze", "percezione", "coscienza", "cervello"]
+    },
+    {
+      "id": 3,
+      "title": "GPT e Transformer: L'Architettura dell'AI",
+      "description": "Un deep dive tecnico nell'architettura transformer che ha reso possibile i modelli linguistici",
+      "category": "Intelligenza Artificiale",
+      "url": "./articolo/gpt-transformer.html",
+      "tags": ["AI", "machine learning", "GPT", "transformer", "deep learning"]
+    },
+    {
+      "id": 4,
+      "title": "La Teoria delle Stringhe Spiegata",
+      "description": "Un viaggio nel tentativo di unificare tutte le forze fondamentali della natura",
+      "category": "Fisica",
+      "url": "./articolo/teoria-stringhe.html",
+      "tags": ["fisica", "stringhe", "teoria", "universo"]
+    },
+    {
+      "id": 5,
+      "title": "CRISPR: Editare il DNA della Vita",
+      "description": "La rivoluzione dell'editing genetico e le sue implicazioni etiche",
+      "category": "Biologia",
+      "url": "./articolo/crispr.html",
+      "tags": ["biologia", "genetica", "CRISPR", "DNA", "editing genetico"]
+    },
+    {
+      "id": 6,
+      "title": "Buchi Neri: Divoratori di Luce",
+      "description": "Cosa succede oltre l'orizzonte degli eventi dei buchi neri",
+      "category": "Astrofisica",
+      "url": "./articolo/buchi-neri.html",
+      "tags": ["astrofisica", "buchi neri", "gravità", "spazio"]
+    },
+    {
+      "id": 7,
+      "title": "Il Principio di Indeterminazione di Heisenberg",
+      "description": "Perché non possiamo conoscere tutto con precisione assoluta",
+      "category": "Fisica Quantistica",
+      "url": "./articolo/heisenberg.html",
+      "tags": ["quantistica", "heisenberg", "fisica", "indeterminazione"]
+    },
+    {
+      "id": 8,
+      "title": "Neuroplasticità: Il Cervello che si Rimodella",
+      "description": "Come il cervello modifica le sue connessioni in risposta all'esperienza",
+      "category": "Neuroscienze",
+      "url": "./articolo/neuroplasticita.html",
+      "tags": ["neuroscienze", "neuroplasticità", "cervello", "apprendimento"]
+    },
+    {
+      "id": 9,
+      "title": "Reti Neurali Convoluzionali",
+      "description": "Come funzionano le CNN nella computer vision",
+      "category": "Intelligenza Artificiale",
+      "url": "./articolo/cnn.html",
+      "tags": ["AI", "CNN", "computer vision", "deep learning", "reti neurali"]
+    },
+    {
+      "id": 10,
+      "title": "L'Energia Oscura e l'Espansione dell'Universo",
+      "description": "Il mistero della forza che sta accelerando l'espansione cosmica",
+      "category": "Cosmologia",
+      "url": "./articolo/energia-oscura.html",
+      "tags": ["cosmologia", "energia oscura", "universo", "espansione"]
+    },
+    {
+      "id": 11,
+      "title": "Teoria dei Numeri Primi",
+      "description": "Scopri gli orrori della matematica attraverso i numeri primi",
+      "category": "Matematica",
+      "url": "./articolo/numeri-primi.html",
+      "tags": ["matematica", "numeri primi", "teoria dei numeri"]
+    },
+    {
+      "id": 12,
+      "title": "La Chimica dei Legami Molecolari",
+      "description": "Come gli atomi si uniscono per formare molecole complesse",
+      "category": "Chimica",
+      "url": "./articolo/legami-molecolari.html",
+      "tags": ["chimica", "molecole", "legami", "atomi"]
+    },
+    {
+      "id": 13,
+      "title": "Evoluzione e Selezione Naturale",
+      "description": "I meccanismi che hanno plasmato la vita sulla Terra",
+      "category": "Biologia",
+      "url": "./articolo/evoluzione.html",
+      "tags": ["biologia", "evoluzione", "darwin", "selezione naturale"]
+    },
+    {
+      "id": 14,
+      "title": "Il Metodo Scientifico: Filosofia della Scienza",
+      "description": "Come facciamo a sapere quello che sappiamo",
+      "category": "Filosofia della Scienza",
+      "url": "./articolo/metodo-scientifico.html",
+      "tags": ["filosofia", "scienza", "metodo scientifico", "epistemologia"]
+    },
+    {
+      "id": 15,
+      "title": "Relatività Generale e Spaziotempo",
+      "description": "Einstein e la curvatura dello spaziotempo",
+      "category": "Fisica",
+      "url": "./articolo/relativita.html",
+      "tags": ["fisica", "relatività", "einstein", "spaziotempo"]
+    }
+  ]
+}

@@ -6,6 +6,8 @@
     <title>Categorie - HackMyBrain</title>
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="./categorie.css">
+    <!-- Fuse.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/7.0.0/fuse.min.js"></script>
 </head>
 <body>
     <!-- Navbar -->
@@ -30,16 +32,28 @@
             <span class="section-label">Esplora</span>
             <h1>Tutte le <span class="highlight">Categorie</span></h1>
             <p class="hero-categories-lead">Scegli l'area scientifica che vuoi esplorare e inizia il tuo viaggio nella conoscenza</p>
+            
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    class="search-input" 
+                    placeholder="Cerca articoli, categorie, argomenti..."
+                    autocomplete="off"
+                >
+                <div id="searchResults" class="search-results"></div>
+            </div>
         </div>
     </section>
 
     <!-- Grid Categorie -->
     <section class="categories-section">
         <div class="categories-container">
-            <div class="categories-grid">
+            <div class="categories-grid" id="categoriesGrid">
                 
                 <!-- Matematica -->
-                <a href="./categoria/matematica.html" class="category-item">
+                <a href="./categoria/matematica.html" class="category-item" data-category="matematica">
                     <div class="category-image">
                         <img src="../assets/images/categories/matematica.jpg" alt="Matematica">
                     </div>
@@ -50,7 +64,7 @@
                 </a>
 
                 <!-- Fisica -->
-                <a href="./categoria/fisica.html" class="category-item">
+                <a href="./categoria/fisica.html" class="category-item" data-category="fisica">
                     <div class="category-image">
                         <img src="../assets/images/categories/fisica.jpg" alt="Fisica">
                     </div>
@@ -61,7 +75,7 @@
                 </a>
 
                 <!-- Chimica -->
-                <a href="./categoria/chimica.html" class="category-item">
+                <a href="./categoria/chimica.html" class="category-item" data-category="chimica">
                     <div class="category-image">
                         <img src="../assets/images/categories/chimica.jpg" alt="Chimica">
                     </div>
@@ -72,7 +86,7 @@
                 </a>
 
                 <!-- Biologia -->
-                <a href="./categoria/biologia.html" class="category-item">
+                <a href="./categoria/biologia.html" class="category-item" data-category="biologia">
                     <div class="category-image">
                         <img src="../assets/images/categories/biologia.jpg" alt="Biologia">
                     </div>
@@ -83,7 +97,7 @@
                 </a>
 
                 <!-- Neuroscienze -->
-                <a href="./categoria/neuroscienze.html" class="category-item">
+                <a href="./categoria/neuroscienze.html" class="category-item" data-category="neuroscienze">
                     <div class="category-image">
                         <img src="../assets/images/categories/neuroscienze.jpg" alt="Neuroscienze">
                     </div>
@@ -94,7 +108,7 @@
                 </a>
 
                 <!-- Intelligenza Artificiale -->
-                <a href="./categoria/ai.html" class="category-item">
+                <a href="./categoria/ai.html" class="category-item" data-category="ai">
                     <div class="category-image">
                         <img src="../assets/images/categories/ai.jpg" alt="Intelligenza Artificiale">
                     </div>
@@ -105,7 +119,7 @@
                 </a>
 
                 <!-- Cosmologia -->
-                <a href="./categoria/cosmologia.html" class="category-item">
+                <a href="./categoria/cosmologia.html" class="category-item" data-category="cosmologia">
                     <div class="category-image">
                         <img src="../assets/images/categories/cosmologia.jpg" alt="Cosmologia">
                     </div>
@@ -116,7 +130,7 @@
                 </a>
 
                 <!-- Fisica Quantistica -->
-                <a href="./categoria/quantistica.html" class="category-item">
+                <a href="./categoria/quantistica.html" class="category-item" data-category="quantistica">
                     <div class="category-image">
                         <img src="../assets/images/categories/quantistica.jpg" alt="Fisica Quantistica">
                     </div>
@@ -127,7 +141,7 @@
                 </a>
 
                 <!-- Astrofisica -->
-                <a href="./categoria/astrofisica.html" class="category-item">
+                <a href="./categoria/astrofisica.html" class="category-item" data-category="astrofisica">
                     <div class="category-image">
                         <img src="../assets/images/categories/astrofisica.jpg" alt="Astrofisica">
                     </div>
@@ -138,7 +152,7 @@
                 </a>
 
                 <!-- Filosofia della Scienza -->
-                <a href="./categoria/filosofia.html" class="category-item">
+                <a href="./categoria/filosofia.html" class="category-item" data-category="filosofia">
                     <div class="category-image">
                         <img src="../assets/images/categories/filosofia.jpg" alt="Filosofia della Scienza">
                     </div>
@@ -173,5 +187,7 @@
             <p>&copy; 2025 HackMyBrain. Tutti i diritti riservati.</p>
         </div>
     </footer>
+
+    <script src="./search.js"></script>
 </body>
 </html>
