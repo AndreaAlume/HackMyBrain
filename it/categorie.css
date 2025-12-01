@@ -1,96 +1,170 @@
-/* Searchbar */
-.search-section {
-    padding: 40px 3rem 20px;
+/* Hero Categorie */
+.hero-categories {
+    padding: 180px 3rem 80px;
     text-align: center;
+    background: linear-gradient(135deg, rgba(255, 69, 0, 0.02) 0%, rgba(5, 5, 5, 0) 100%);
 }
 
-.search-container {
-    max-width: 600px;
+.hero-categories-container {
+    max-width: 900px;
     margin: 0 auto;
 }
 
-.search-bar {
-    width: 100%;
-    padding: 0.8rem;
-    font-size: 1.1rem;
-    background: transparent;
-    border: none;
-    border-bottom: 2px solid #ff6b2b;
+.hero-categories h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
     color: #ffffff;
-    outline: none;
-    transition: border-color 0.3s ease;
+    font-weight: 700;
+    letter-spacing: -2px;
+    animation: fadeInUp 0.8s ease-out;
 }
 
-.search-bar::placeholder {
-    color: #9a9a9a;
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-/* Categories Grid */
+.hero-categories-lead {
+    font-size: 1.3rem;
+    color: #b0b0b0;
+    line-height: 1.7;
+    max-width: 700px;
+    margin: 0 auto;
+    animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+/* Categories Section */
 .categories-section {
-    padding: 80px 3rem;
+    padding: 80px 3rem 100px;
 }
 
 .categories-container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
 .categories-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
 }
 
-.category-card {
-    background: linear-gradient(135deg, rgba(15, 15, 15, 0.9) 0%, rgba(20, 20, 20, 0.9) 100%);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 12px;
-    overflow: hidden;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-}
-
-.category-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 24px rgba(255, 69, 0, 0.2);
-    border-color: rgba(255, 69, 0, 0.3);
-}
-
-.category-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+.category-item {
+    text-decoration: none;
     display: block;
+    transition: all 0.4s;
 }
 
-.category-card h3 {
-    font-size: 1.6rem;
+.category-item:hover {
+    transform: translateY(-10px);
+}
+
+.category-image {
+    width: 100%;
+    height: 350px;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.4s;
+}
+
+.category-item:hover .category-image {
+    border-color: rgba(255, 69, 0, 0.3);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.category-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s;
+}
+
+.category-item:hover .category-image img {
+    transform: scale(1.05);
+}
+
+.category-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, transparent 0%, rgba(5, 5, 5, 0.7) 100%);
+    pointer-events: none;
+}
+
+.category-content {
+    padding: 0 0.5rem;
+}
+
+.category-content h3 {
+    font-size: 2rem;
     color: #ffffff;
-    margin: 1rem 0 0.5rem;
+    margin-bottom: 0.8rem;
     font-weight: 700;
+    letter-spacing: -0.5px;
+    transition: color 0.3s;
 }
 
-.category-card p {
-    font-size: 1rem;
+.category-item:hover .category-content h3 {
+    color: #ff4500;
+}
+
+.category-content p {
+    font-size: 1.05rem;
     color: #9a9a9a;
-    padding: 0 1rem 1.5rem;
     line-height: 1.6;
 }
 
 /* Responsive */
-@media (max-width: 992px) {
-    .categories-grid {
-        grid-template-columns: repeat(2, 1fr);
+@media (max-width: 1200px) {
+    .hero-categories h1 {
+        font-size: 3rem;
     }
 }
 
-@media (max-width: 600px) {
-    .categories-grid {
-        grid-template-columns: 1fr;
+@media (max-width: 768px) {
+    .hero-categories {
+        padding: 140px 1.5rem 60px;
     }
 
-    .category-card img {
-        height: 150px;
+    .hero-categories h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-categories-lead {
+        font-size: 1.1rem;
+    }
+
+    .categories-section {
+        padding: 60px 1.5rem;
+    }
+
+    .categories-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .category-image {
+        height: 250px;
+    }
+
+    .category-content h3 {
+        font-size: 1.6rem;
+    }
+
+    .category-content p {
+        font-size: 1rem;
     }
 }
